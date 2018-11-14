@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "name": "data",
+      "connection": "botista_RootManageSharedAccessKey_SERVICEBUS",
+      "queueName": "graph-requests",
+      "accessRights": "Manage",
+      "direction": "in"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "botista_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "botData",
+      "queueName": "send-to-bot",
+      "accessRights": "Manage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

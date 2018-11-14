@@ -1,0 +1,14 @@
+{
+  "name": "snow-create-ticket",
+  "version": "1.0.0",
+  "description": "create ticket in snow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tarik",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}

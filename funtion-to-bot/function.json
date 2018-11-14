@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "type": "bot",
+      "name": "$return",
+      "direction": "out",
+      "botId": "testbot"
+    },
+    {
+      "type": "http",
+      "name": "res",
+      "direction": "out"
+    },
+    {
+      "type": "serviceBusTrigger",
+      "name": "myQueueItem",
+      "connection": "botista_RootManageSharedAccessKey_SERVICEBUS",
+      "accessRights": "Manage",
+      "direction": "in",
+      "queueName": "send-to-bot"
+    }
+  ]
+}

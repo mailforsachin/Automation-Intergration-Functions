@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "snow-ticket-tasks",
+      "connection": "botista_RootManageSharedAccessKey_SERVICEBUS",
+      "accessRights": "Manage"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "botista_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "botdata",
+      "queueName": "send-to-bot",
+      "accessRights": "Manage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
